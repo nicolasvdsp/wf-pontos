@@ -1,5 +1,5 @@
 function feature() {
-  console.log("feature");
+  console.log("production");
 }
 
 export default feature
