@@ -4,5 +4,7 @@ import './styles/style.css'
 import './scss/app.scss';
 
 import feature from './features/animations';
+import animateLogo from './features/logo';
 
+animateLogo();
 feature();
