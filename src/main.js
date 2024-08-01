@@ -7,5 +7,4 @@ import feature from './features/animations';
 import logo from './features/logo';
 
 logo.animateLogo();
-logo.testLottie();
 feature();

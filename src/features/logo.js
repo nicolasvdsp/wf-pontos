@@ -18,11 +18,6 @@ function animateLogo() {
   });
 }
 
-function testLottie() {
-
-}
-
 export default {
-  animateLogo,
-  testLottie
+  animateLogo
 }
