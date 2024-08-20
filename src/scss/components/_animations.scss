@@ -1,1 +1,57 @@
 @use '../abstracts' as *;
+
+// ------HOMEPAGE - CONTENT-----
+
+// -- On hover (-> js): dim and remove underline from sister elements
+.dimmed {
+  opacity: .3;
+
+  .arrow_head {
+    width: 100%;
+  }
+}
+
+// -- On hover: make algae-green and show arrow
+.link--content:hover {
+
+  .arrow_head,
+  .arrow_head__path {
+    width: 1rem;
+  }
+
+  .arrow_tail,
+  .arrow_head__path,
+  div {
+    border-color: $algae-green;
+    color: $algae-green;
+  }
+
+  .arrow_head__svg {
+    transform: translateX(0rem);
+  }
+}
+
+// -- Determine transitions
+
+.link--content {
+  @include transition(opacity);
+
+  .arrow_tail {
+    @include transition(border-color);
+
+    &,
+    .arrow_head__path,
+    div {
+      @include transition(color);
+    }
+  }
+
+  .arrow_head {
+    @include transition(width);
+  }
+
+  .arrow_head__svg {
+    @include transition(transform);
+  }
+
+}

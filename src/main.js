@@ -3,8 +3,8 @@ import { DotLottiePlayer } from 'https://unpkg.com/@dotlottie/player-component@l
 import './styles/style.css'
 import './scss/app.scss';
 
-import feature from './features/animations';
+import animateContentMenu from './features/animations';
 import animateLogo from './features/logo';
 
+animateContentMenu();
 animateLogo();
-feature();
