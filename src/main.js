@@ -5,6 +5,8 @@ import './scss/app.scss';
 
 import animateContentMenu from './features/animations';
 import animateLogo from './features/logo';
+import updateAllTextOnBreakpoints from './features/breakpoints';
 
 animateContentMenu();
 animateLogo();
+updateAllTextOnBreakpoints();

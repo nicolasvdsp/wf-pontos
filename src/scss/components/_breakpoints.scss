@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+@media (max-width: 840px) {
+  .footer__text {
+    font-size: 0.875rem;
+  }
+
+  .cta_content {
+    font-size: 2.5rem;
+  }
+}
