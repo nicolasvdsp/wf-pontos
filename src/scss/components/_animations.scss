@@ -12,46 +12,48 @@
 }
 
 // -- On hover: make algae-green and show arrow
-.link--content:hover {
+@media (hover: hover) and (pointer: fine) {
+  .link--content:hover {
 
-  .arrow_head,
-  .arrow_head__path {
-    width: 1rem;
-  }
+    .arrow_head,
+    .arrow_head__path {
+      width: 1rem;
+    }
 
-  .arrow_tail,
-  .arrow_head__path,
-  div {
-    border-color: $algae-green;
-    color: $algae-green;
-  }
-
-  .arrow_head__svg {
-    transform: translateX(0rem);
-  }
-}
-
-// -- Determine transitions
-
-.link--content {
-  @include transition(opacity);
-
-  .arrow_tail {
-    @include transition(border-color);
-
-    &,
+    .arrow_tail,
     .arrow_head__path,
     div {
-      @include transition(color);
+      border-color: $algae-green;
+      color: $algae-green;
+    }
+
+    .arrow_head__svg {
+      transform: translateX(0rem);
     }
   }
 
-  .arrow_head {
-    @include transition(width);
-  }
+  // -- Determine transitions
 
-  .arrow_head__svg {
-    @include transition(transform);
-  }
+  .link--content {
+    @include transition(opacity);
 
+    .arrow_tail {
+      @include transition(border-color);
+
+      &,
+      .arrow_head__path,
+      div {
+        @include transition(color);
+      }
+    }
+
+    .arrow_head {
+      @include transition(width);
+    }
+
+    .arrow_head__svg {
+      @include transition(transform);
+    }
+
+  }
 }
